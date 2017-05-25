@@ -20,3 +20,20 @@ Once the package is done being installed, register the service provider. Open `c
  ```
  GoodnessKay\LaravelSlack\LaravelSlackServiceProvider::class
  ```
+ 
+ After that, register the Facade in the same `config/app.php` file:
+ 
+ ```
+ 'aliases' => [
+     ...
+        'LaravelSlack' => GoodnessKay\LaravelSlack\Facade\LaravelSlack::class,
+     ...
+ ]
+ ```
+ 
+ ## Configure
+ Publish the config file `LaravelSlack.php` to config folder and the **Views** folder of the package named **Slack** to the `resources/views` folder
+ 
+```
+php artisan vendor:publish --provider="GoodnessKay\LaravelSlack\LaravelSlackServiceProvider" 
+```
