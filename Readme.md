@@ -41,7 +41,7 @@ php artisan vendor:publish --provider="GoodnessKay\LaravelSlack\LaravelSlackServ
 ##  How it Works
 After following all the information stated above, what next to do are:
 
-### A) Copy the code below to your `.env` file and make changes to the values.
+**A)** Copy the code below to your `.env` file and make changes to the values.
 
 ```
 SLACK_TEAM_NAME="Codebag Team"
@@ -52,5 +52,25 @@ SLACK_TEAM_EMAIL="gtkbrain@gmail.com"
 
 ```
 
-**Note:** Make sure you include the quotation mark
+**Note:** Make sure you include the quotation mark.
+
+**B)** Copy the code below into your route file  `route/web.php`
+
+```
+Route::get('/slack',[
+    'uses'=>'LaravelSlackController@slackPage',
+    'as'=>'slack'
+]);
+
+Route::post('/slack',[
+    'uses'=>'LaravelSlackController@sendSlackInvite',
+    'as'=>'slack'
+]);
+
+```
+
+**C)** Use `php artisan serve` and check your slack invite page on `http://locahost:8000/slack`
+
+
+
 

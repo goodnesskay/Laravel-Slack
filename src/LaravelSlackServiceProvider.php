@@ -33,6 +33,10 @@ class LaravelSlackServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/views/slack/slack-asset' => public_path('/slack-asset'),
         ], 'public');
+
+        $this->publishes([
+            __DIR__.'/controller/LaravelSlackController.php' => app_path('/Http/Controllers/LaravelSlackController.php'),
+        ], 'app');
     }
 
     /**
