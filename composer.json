@@ -1,0 +1,20 @@
+{
+    "name": "goodnesskay/laravel-slack",
+    "description": "A Laravel Package that makes Invitation to Slack Channels seamless",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel","packages","slack","Automatic Invite","SLack Api"],
+    "authors": [
+        {
+            "name": "Goodness Toluwanimi Kayode",
+            "email": "gtkbrain@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "GoodnessKay\\LaravelSlack\\": "src/"
+        }
+    }
+}
