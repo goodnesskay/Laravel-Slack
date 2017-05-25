@@ -37,3 +37,20 @@ Once the package is done being installed, register the service provider. Open `c
 ```
 php artisan vendor:publish --provider="GoodnessKay\LaravelSlack\LaravelSlackServiceProvider" 
 ```
+
+##  How it Works
+After following all the information stated above, what next to do are:
+
+### A) Copy the code below to your `.env` file and make changes to the values.
+
+```
+SLACK_TEAM_NAME="Codebag Team"
+TEAM_DESCRIPTION="Brief Description of your team. This will be seen publicly"
+SLACK_TEAM_URL="https://codebag-team-test.slack.com/"
+SLACK_API_TOKEN="apap-2526258373-71328384096-187220289412-01c2c6637bb0d474f39f24e0a79d6e072"
+SLACK_TEAM_EMAIL="gtkbrain@gmail.com"
+
+```
+
+**Note:** Make sure you include the quotation mark
+
