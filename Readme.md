@@ -1,5 +1,11 @@
-[![Latest Stable Version](https://poser.pugx.org/goodnesskay/laravel-slack/v/stable)](https://packagist.org/packages/goodnesskay/laravel-slack)
+
 ## LARAVEL SLACK PACKAGE
+
+[![Latest Stable Version](https://poser.pugx.org/goodnesskay/laravel-slack/v/stable)](https://packagist.org/packages/goodnesskay/laravel-slack)
+[![License](https://poser.pugx.org/goodnesskay/laravel-slack/license)](https://packagist.org/packages/goodnesskay/laravel-slack)
+[![Code Coverage](https://scrutinizer-ci.com/g/goodnesskay/Laravel-Slack/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/goodnesskay/Laravel-Slack/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/goodnesskay/Laravel-Slack/badges/build.png?b=master)](https://scrutinizer-ci.com/g/goodnesskay/Laravel-Slack/build-status/master)
+
 > This package was built for easy integration of automatic Slack invite into your Laravel Project instead of writing codes from scratch or with another programming language.
 If your web project is built on Laravel and you need to handle Automatic Slack Invite, this package makes that job seamless. Enjoy!!!
 
