@@ -13,7 +13,7 @@
 
 <body class="bg-faded p-t-2">
 <div style="margin-top: 7%" class="container">
-    <img src="{{ asset('slack-asset/img/favicon.ico') }}" class="center-block" alt="">
+    <img src="{{ asset('slack-asset/img/favicon.ico') }}" class="center-block" width="100px" alt="">
     <h3 class="p-y-1 text-xs-center">Join <strong>{{ config('LaravelSlack.slack_team_name') }}</strong> on Slack</h3>
     <p class="text-xs-center">{{ config('LaravelSlack.team_description') }}</p>
 </div>
