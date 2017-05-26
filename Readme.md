@@ -38,6 +38,11 @@ Once the package is done being installed, register the service provider. Open `c
  ]
  ```
  
+Finally, this project requires GuzzleHttp Client. Install it by running this in your terminal
+```
+composer require guzzlehttp/guzzle
+```
+ 
  ## Configure
  Publish the config file `LaravelSlack.php` to config folder,
   the **Views** folder of the package named **Slack** to the `resources/views` folder and `LaravelSlackController.php` to `App\Http\Controller`  folder
