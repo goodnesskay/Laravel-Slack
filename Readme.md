@@ -62,6 +62,7 @@ SLACK_TEAM_EMAIL="gtkbrain@gmail.com"
 ```
 
 **Note:** Make sure you include the quotation mark.
+> To get your Slack Api Token, check [https://api.slack.com/custom-integrations/legacy-tokens](https://api.slack.com/custom-integrations/legacy-tokens) and go to Legacy Token Generator to issue the token.
 
 **B)** Copy the code below into your route file  `routes/web.php`
 
@@ -86,7 +87,7 @@ You can `fork` this package, `contribute` and `submit a pull request`. I will re
 
 ##  You want to appreciate me?
 
-You can appreciate me by starring this repository and follow me on [Github](https://github.com/goodnesskay) , [twitter](https://twitter.com/goodnesskayode) and subscribe to my [Youtube](https://www.youtube.com/channel/UC3h5EkjLBS5VtpJRVRrMD-Q) Channel!
+You can appreciate me by **starring** this repository and follow me on [Github](https://github.com/goodnesskay) , [twitter](https://twitter.com/goodnesskayode) and subscribe to my [Youtube](https://www.youtube.com/channel/UC3h5EkjLBS5VtpJRVRrMD-Q) Channel!
 
 I love you too.
 
