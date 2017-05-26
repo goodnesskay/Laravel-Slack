@@ -63,7 +63,7 @@ SLACK_TEAM_EMAIL="gtkbrain@gmail.com"
 
 **Note:** Make sure you include the quotation mark.
 
-**B)** Copy the code below into your route file  `route/web.php`
+**B)** Copy the code below into your route file  `routes/web.php`
 
 ```
 Route::get('/slack',[
