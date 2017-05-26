@@ -86,7 +86,7 @@ You can `fork` this package, `contribute` and `submit a pull request`. I will re
 
 ##  You want to appreciate me?
 
-You can appreciate me by starring this repository and follow me on [Github](https://github.com/goodnesskay) and [twitter](https://twitter.com/goodnesskayode)!
+You can appreciate me by starring this repository and follow me on [Github](https://github.com/goodnesskay) , [twitter](https://twitter.com/goodnesskayode) and subscribe to my [Youtube](https://www.youtube.com/channel/UC3h5EkjLBS5VtpJRVRrMD-Q) Channel!
 
 I love you too.
 
