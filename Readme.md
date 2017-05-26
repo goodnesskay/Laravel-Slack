@@ -81,6 +81,9 @@ Route::post('/slack',[
 
 **C)** Use `php artisan serve` and check your slack invite page on `http://locahost:8000/slack`
  
+ You should see this:
+ ![goodnesskay-laravel-slack-view](https://cloud.githubusercontent.com/assets/16525886/26491867/3598c632-4209-11e7-9fe6-347d730532e1.png)
+ 
 ## Contribute
 
 You can `fork` this package, `contribute` and `submit a pull request`. I will really love it.
