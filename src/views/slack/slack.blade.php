@@ -1,71 +1,73 @@
 
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Join {{ config('LaravelSlack.slack_team_name') }} on Slack</title>
     <meta content="author" description="Goodness Toluwanimi Kayode <gtkbrain@gmail.com> | Pusher of Codes">
     <meta content="courtesy" description="Goodness Toluwanimi Kayode <gtkbrain@gmail.com> | Pusher of Codes">
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-    <link rel="stylesheet" href="{{asset('slack-asset/css/style.css')}}">
-    <link rel="stylesheet" href="{{asset('slack-asset/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('slack-asset/css/landio.css') }}">
 </head>
 
-<body>
-<div class="cotn_principal">
-    <div class="cont_centrar">
+<body class="bg-faded p-t-2">
+<div style="margin-top: 7%" class="container">
+    <img src="{{ asset('slack-asset/img/favicon.ico') }}" class="center-block" alt="">
+    <h3 class="p-y-1 text-xs-center">Join <strong>{{ config('LaravelSlack.slack_team_name') }}</strong> on Slack</h3>
+    <p class="text-xs-center">{{ config('LaravelSlack.team_description') }}</p>
+</div>
 
-        <div class="cont_login">
-            <div class="cont_info_log_sign_up">
-                <div class="col_md_sign_up">
-                    <div class="cont_ba_opcitiy">
-                        <h2>Join {{ config('LaravelSlack.slack_team_name') }} on Slack</h2>
-                        <p>{{ config('LaravelSlack.team_description') }}</p>
-                        <div class="row">
-                            <div class="col-md-9 col-md-offset-1">
-                                @if (session('alert'))
-                                    <div class="alert alert-info alert-dismissible" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <p class="text-center">{{ session('alert') }}</p>
-                                    </div>
-                                @endif
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-xl-4">
+            <hr class="invisible">
+        </div>
+        <div class="col-md-8 col-xl-6 col-xl-offset-3">
 
-                                @if (session('error'))
-                                    <div class="alert alert-danger alert-dismissible" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <p class="text-center">{{ session('error') }}</p>
-                                    </div>
-                                @endif
-                            </div>
-                            <div class="col-md-8 col-md-offset-2">
-                                <br><br>
-                                <form action="{{ url('slack') }}" method="post">
-                                    {{csrf_field()}}
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" placeholder="john@john.com">
-                                    </div>
-                                    <button class="btn_sign_up" onclick="cambiar_sign_up()">Request to Join</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+            @if (session('alert'))
+                <div class="alert alert-info alert-dismissible" role="alert">
+                    <p style="color:dodgerblue;" class="text-xs-center">{{ session('alert') }}</p>
                 </div>
-            </div>
+            @endif
 
-
-            <div class="cont_back_info">
-                <div class="cont_img_back_grey">
-                    <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+            @if (session('error'))
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <p style="color:red" class="text-xs-center">{{ session('error') }}</p>
                 </div>
+            @endif
 
-            </div>
+            <form action="{{ url('slack') }}" method="post">
+                {{csrf_field()}}
+                <div class="form-group has-icon-left form-control-email">
+                    <label class="sr-only" for="inputEmail">Your Email</label>
+                    <input type="text" class="form-control form-control-lg" id="inputEmail" placeholder="Your Email">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Request to Join</button>
+            </form>
 
         </div>
     </div>
 </div>
 
-<script src="{{ asset('slack-asset/js/index.js') }}"></script>
 
+<hr class="invisible">
+<footer class="section-footer bg-white" role="contentinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <div class="media">
+                    <small class="media-body text-xs-center">
+                        &copy; {{ config('LaravelSlack.slack_team_name') }} {{ date('Y') }}.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="{{ asset('slack-asset/js/landio.min.js') }}"></script>
 </body>
 </html>

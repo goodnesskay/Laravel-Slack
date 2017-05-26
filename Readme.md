@@ -32,10 +32,12 @@ Once the package is done being installed, register the service provider. Open `c
  ```
  
  ## Configure
- Publish the config file `LaravelSlack.php` to config folder and the **Views** folder of the package named **Slack** to the `resources/views` folder
+ Publish the config file `LaravelSlack.php` to config folder,
+  the **Views** folder of the package named **Slack** to the `resources/views` folder and `LaravelSlackController.php` to `App\Http\Controller`  folder
  
 ```
 php artisan vendor:publish --provider="GoodnessKay\LaravelSlack\LaravelSlackServiceProvider" 
+
 ```
 
 ##  How it Works
@@ -70,7 +72,21 @@ Route::post('/slack',[
 ```
 
 **C)** Use `php artisan serve` and check your slack invite page on `http://locahost:8000/slack`
+ 
+## Contribute
+
+You can `fork` this package, `contribute` and `submit a pull request`. I will really love it.
+
+##  You want to appreciate me?
+
+You can appreciate me by starring this repository and follow me on [Github](https://github.com/goodnesskay) and [twitter](https://twitter.com/goodnesskayode)!
+
+I love you too.
+
+**Goodness Kayode | Pusher of Codes**
 
 
+## License
 
+MIT License (MIT).
 
