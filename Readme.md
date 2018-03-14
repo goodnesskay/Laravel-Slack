@@ -93,6 +93,9 @@ Route::post('/slack', 'LaravelSlackController@sendSlackInvite')->name('slack');
 
 **C)** Use `php artisan serve` and check your slack invite page on `http://locahost:8000/slack`
 
+- If you wish to serve your project on another port other than `8000`, say `8080`, simple add the `--port` flag to the `serve` artisan command like this:
+`php artisan serve --port=8080` or `php artisan serve --port 8080`, then check your slack invite page on `http://localhost:8080/slack`
+
  You should see this:
  ![goodnesskay-laravel-slack-view](https://cloud.githubusercontent.com/assets/16525886/26491867/3598c632-4209-11e7-9fe6-347d730532e1.png)
 
