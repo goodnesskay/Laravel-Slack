@@ -12,7 +12,7 @@ If your web project is built on Laravel and you need to handle Automatic Slack I
 
 ## Requirement
 
-- [PHP](https://php.net) 5.6+ 
+- [PHP](https://php.net) 5.6+
 - [Composer](https://getcomposer.org)
 
 ## Installation
@@ -27,9 +27,9 @@ Once the package is done being installed, register the service provider. Open `c
  ```
  GoodnessKay\LaravelSlack\LaravelSlackServiceProvider::class
  ```
- 
+
  After that, register the Facade in the same `config/app.php` file:
- 
+
  ```
  'aliases' => [
      ...
@@ -37,18 +37,18 @@ Once the package is done being installed, register the service provider. Open `c
      ...
  ]
  ```
- 
+
 Finally, this project requires GuzzleHttp Client. Install it by running this in your terminal
 ```
 composer require guzzlehttp/guzzle
 ```
- 
+
  ## Configure
  Publish the config file `LaravelSlack.php` to config folder,
   the **Views** folder of the package named **Slack** to the `resources/views` folder and `LaravelSlackController.php` to `App\Http\Controller`  folder
- 
+
 ```
-php artisan vendor:publish --provider="GoodnessKay\LaravelSlack\LaravelSlackServiceProvider" 
+php artisan vendor:publish --provider="GoodnessKay\LaravelSlack\LaravelSlackServiceProvider"
 
 ```
 
@@ -84,11 +84,21 @@ Route::post('/slack',[
 
 ```
 
+- If you are running Laravel 5.4+, you might want to try using this:
+
+```
+Route::get('/slack', 'LaravelSlackController@slackPage')->name('slack');
+Route::post('/slack', 'LaravelSlackController@sendSlackInvite')->name('slack');
+```
+
 **C)** Use `php artisan serve` and check your slack invite page on `http://locahost:8000/slack`
- 
+
+- If you wish to serve your project on another port other than `8000`, say `8080`, simple add the `--port` flag to the `serve` artisan command like this:
+`php artisan serve --port=8080` or `php artisan serve --port 8080`, then check your slack invite page on `http://localhost:8080/slack`
+
  You should see this:
  ![goodnesskay-laravel-slack-view](https://cloud.githubusercontent.com/assets/16525886/26491867/3598c632-4209-11e7-9fe6-347d730532e1.png)
- 
+
 ## Contribute
 
 You can `fork` this package, `contribute` and `submit a pull request`. I will really love it.
